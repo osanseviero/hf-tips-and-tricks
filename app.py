@@ -39,15 +39,16 @@ def get_page_data(post_path: Path):
 
 def main():
     st.set_page_config(layout="wide")
-    posts = ['posts/hello_world.md', 'posts/check_this_out.md']
-    page_to_show = None
+    posts = ['posts/1_blog_in_spaces.md']
+    page_to_show = posts[0]
     with st.sidebar:
     
         st.markdown('''
             <div align="center">
-                <h1>A Test Blog!</h1>
+                <h1>🤗 Tips & Tricks</h1>
+                <p>Learn power user tips of things you can do at Hugging Face. Learn about latest features and more!</p>
 
-            [![Github Badge](https://img.shields.io/github/stars/nateraw/host-a-blog-on-huggingface-spaces?style=social)](https://github.com/nateraw/host-a-blog-on-huggingface-spaces)
+            [![Github Badge](https://img.shields.io/github/stars/osanseviero/hf-tips-and-tricks?style=social)](https://github.com/osanseviero/hf-tips-and-tricks)
             </div>
         ''', unsafe_allow_html=True)
         st.markdown('---')

@@ -10,7 +10,7 @@ pinned: false
 
 # Host a Blog on HuggingFace Spaces
 
-[![Generic badge](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/nateraw/host-a-blog-on-huggingface-spaces)
+[![Generic badge](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/osanseviero/tips-and-tricks)
 
 How to host a blog on 🤗
 
