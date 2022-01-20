@@ -3,10 +3,6 @@ import re
 from pathlib import Path
 import importlib
 
-import yaml
-
-REGEX_YAML_BLOCK = re.compile(r"---[\n\r]+([\S\s]*?)[\n\r]+---[\n\r](.*)", re.DOTALL)
-
 
 def render_preview(image, title, description):
     with st.container():

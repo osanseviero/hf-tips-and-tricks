@@ -1,2 +1,4 @@
 streamlit
 pyyaml
+py3Dmol
+stmol==0.0.7
