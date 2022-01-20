@@ -40,7 +40,43 @@ Cool! So Nate has built a [nice template](https://github.com/nateraw/host-a-blog
 
 Yes, let's do it. First, create a [new Space](https://huggingface.co/new-space) at Hugging Face. You will need to specify the Streamlit SDK. Since it's still being setup, you can make it private so others don't see it. The Space can have any name you want.
 
-![Image of Spaces](assets/1_streamlit_space.png)
-
+![Image of Spaces](https://huggingface.co/spaces/osanseviero/tips-and-tricks/resolve/main/assets/1_streamlit_space.png)
 
 The second step is to create a [write token](https://huggingface.co/settings/token). This will allow GitHub to push whenever there are changes to the Space.
+
+![Creation of write token](https://huggingface.co/spaces/osanseviero/tips-and-tricks/resolve/main/assets/1_token.png)
+
+Make sure to copy the token and...
+
+**I won't expose my token! They will hack me!**
+
+No worries, we'll be adding a **secret** in GitHub, which allows to add environment variables that can be accessed but not viewed by anyone. You can go to your **GitHub repo**, go to Settings -> SECRETS, and click ** New secret**. The name can be `HF_TOKEN` and the value is the one you got from the Hub.
+
+Now, if you go to **workflows/sync-to-hub**, you'll see the last line makes a reference to the original repo Space and your token. Let's switch the path to your own Space.
+
+So I changed
+
+```
+run: git push https://nateraw:$HF_TOKEN@huggingface.co/spaces/nateraw/host-a-blog-on-huggingface-spaces main --force
+```
+
+to
+
+```
+run: git push https://osanseviero:$HF_TOKEN@huggingface.co/spaces/osanseviero/tips-and-tricks main --force
+```
+
+As you can see, I never exposed my token!
+
+**Cool**
+
+What is even cooler is that now each time you do any change in the GitHub repository, it will be automatically deployed in HF Spaces and re-deployed!
+
+**What's next?**
+
+Well, you just finished the setup! There are a couple of places where you will want to change stuff and then write your first article. Once you're ready, you should make your Spaces repo public, share it in social media and get likes from the community!
+
+I hope this was useful! Until the next time!
+
+A Hacker Llama 🦙 
+
