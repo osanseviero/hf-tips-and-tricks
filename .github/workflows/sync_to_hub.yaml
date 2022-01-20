@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://nateraw:$HF_TOKEN@huggingface.co/spaces/nateraw/host-a-blog-on-huggingface-spaces main --force
+        run: git push https://osanseviero:$HF_TOKEN@huggingface.co/spaces/osanseviero/tips-and-tricks main --force
