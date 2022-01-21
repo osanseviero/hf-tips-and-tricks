@@ -1,5 +1,5 @@
 ---
-title: Host a Blog on HuggingFace Spaces
+title: HF Tips & Tricks
 emoji: 🤗
 colorFrom: blue
 colorTo: red
