@@ -34,7 +34,10 @@ def get_page_data(post_path: Path):
 
 def main():
     st.set_page_config(layout="wide")
-    posts = ['posts.1_blog_in_spaces']
+    posts = [
+        'posts.2_private_models',
+        'posts.1_blog_in_spaces'
+    ]
     page_to_show = posts[0]
     with st.sidebar:
     
