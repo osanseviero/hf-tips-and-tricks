@@ -55,7 +55,7 @@ def run_article():
 
     with col2:
         st.image("https://github.com/osanseviero/hf-tips-and-tricks/raw/main/assets/2_gradio_space.png", width=300)
-        st.image("https://github.com/osanseviero/hf-tips-and-tricks/raw/main/assets/2_secret.png", width=300)
+        st.image("https://github.com/osanseviero/hf-tips-and-tricks/raw/main/assets/2_token.png", width=300)
         st.image("https://github.com/osanseviero/hf-tips-and-tricks/raw/main/assets/2_secret.png", width=300)
 
 
